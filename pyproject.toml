@@ -3,7 +3,7 @@ name = "round-nutrition"
 version = "1.0.0"
 description = "Round nutritional values for federal compliance."
 readme = "README.md"
-authors = { name = "name goes here" }
+authors = [{ name = "Harsh Dadhich" }]
 license = { file = "LICENSE" }
 repository = "https://github.com/hdadhich01/round-nutrition"
 homepage = "https://github.com/hdadhich01/round-nutrition"
