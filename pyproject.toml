@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Round nutritional values for federal compliance."
 authors = [{ name = "Harsh Dadhich" }]
 readme = "README.md"
-license = "MIT (see LICENSE file)"
+license = { text = "MIT (see LICENSE file)" }
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
