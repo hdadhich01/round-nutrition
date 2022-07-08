@@ -1,4 +1,4 @@
-from utilities import vmo
+from .utilities import vmo
 
 
 class Mineral:

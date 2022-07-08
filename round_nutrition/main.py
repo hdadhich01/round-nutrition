@@ -1,4 +1,4 @@
-from utilities import round_increment, parse_quantity
+from .utilities import round_increment, parse_quantity
 
 
 class Main:
