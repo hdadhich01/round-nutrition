@@ -1,7 +1,7 @@
 [project]
 name = "round-nutrition"
 authors = [{ name = "Harsh Dadhich" }]
-version = "1.0.5"
+version = "1.0.6"
 readme = "README.md"
 description = "Round nutritional values for federal compliance."
 classifiers = [
