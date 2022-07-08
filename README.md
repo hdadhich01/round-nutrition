@@ -33,19 +33,19 @@ All subnutrient methods take in an `integer` or `string` argument of `quantity`.
       cholesterol*            niacin                      copper
       dietary_fiber*          pantothenic_acid            iodine
       insoluble_fiber*        riboflavin                  iron
-      mono_fat*               thiamine                    magnesium
+      mono_fat                thiamine                    magnesium
       other_carb*             vitamin_a                   manganese
-      poly_fat*               vitamin_b12                 molybdenum
+      poly_fat                vitamin_b12                 molybdenum
       potassium               vitamin_b6                  potassium
       protein*                vitamin_c                   phosphorus
-      sat_fat*                vitamin_d                   selenium
+      sat_fat                 vitamin_d                   selenium
       sodium                  vitamin_e                   zinc
       soluble_fiber*          vitamin_k
       sugar_alcohol*
       tot_carb*
-      tot_fat*
+      tot_fat
       tot_sugars*
-      trans_fat*
+      trans_fat
 ```
 *Some functions have an additional `boolean` argument of `minimal` that can be set to `True` for a cleaner user interface implementation. By default, this parameter is set to `False`.
 
