@@ -1,4 +1,4 @@
-from main import vmo
+from utilities import vmo
 
 
 class Other:
