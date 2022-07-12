@@ -3,9 +3,9 @@ from re import match
 
 def parse_quantity(quantity):
     if quantity is None:
-        return 0
+        return 0, ""
     elif type(quantity) in [int, float]:
-        return quantity
+        return quantity, ""
     quantity = quantity.strip()
     parsed = match(r"\d+(\.\d+)?", quantity).group()
     unit = quantity[len(parsed) :].strip() if not quantity.isdigit() else ""

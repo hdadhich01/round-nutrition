@@ -4,7 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/round-nutrition)](https://pypi.org/project/round-nutrition/)
 
 # round-nutrition
-A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) regulations.
+A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
 ## Example
 ```py
 >>> a, b = Main(), Vitamin()
