@@ -12,7 +12,7 @@ class Main:
 
     def _fat(self, quantity):
         value, unit = parse_quantity(quantity)
-        unit = " g" if unit.strip() == "" else unit
+        unit = "g" if unit.strip() == "" else unit
         if value < 0.5:
             return f"0{unit}"
         elif value < 5:
@@ -36,17 +36,16 @@ class Main:
 
     def cholesterol(self, quantity: "int/str", minimal: bool = False) -> str:
         value, unit = parse_quantity(quantity)
-        unit = " mg" if unit.strip() == "" else unit
+        unit = "mg" if unit.strip() == "" else unit
         if value < 2:
             return f"0{unit}"
         elif value < 5:
-            result = f"{round_increment(value, 1)}{unit}"
-            return result if minimal else f"less than{result}"
+            return f"<5{unit}" if minimal else f"less than 5{unit}"
         return f"{round_increment(value, 5)}{unit}"
 
     def _sp(self, quantity):
         value, unit = parse_quantity(quantity)
-        unit = " mg" if unit.strip() == "" else unit
+        unit = "mg" if unit.strip() == "" else unit
         if value < 5:
             return f"0{unit}"
         elif value < 140:
@@ -93,7 +92,7 @@ class Main:
 
     def protein(self, quantity: "int/str", minimal: bool = False) -> str:
         value, unit = parse_quantity(quantity)
-        unit = " g" if unit.strip() == "" else unit
+        unit = "g" if unit.strip() == "" else unit
         if value < 0.5:
             return f"0{unit}"
         elif value < 1:

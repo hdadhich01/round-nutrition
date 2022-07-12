@@ -8,10 +8,10 @@ A lightweight Python package to round nutritional values for federal compliance 
 ## Example
 ```py
 >>> a, b = Main(), Vitamin()
->>> print([a.tot_carb('0.8 g'), b.vitamin_k('125.5mcg')])
-['less than 1 g', '126 mcg']
+>>> print([a.tot_carb('0.8g'), b.vitamin_k('125.5 mcg')])
+['less than 1 g', '126mcg']
 >>> print(a.tot_carb('0.8 g', minimal=True))
-'<1 g'
+'<1g'
 ```
 
 ## Setup

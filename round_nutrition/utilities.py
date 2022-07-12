@@ -10,7 +10,7 @@ def parse_quantity(quantity):
     parsed = match(r"\d+(\.\d+)?", quantity).group()
     unit = quantity[len(parsed) :].strip() if not quantity.isdigit() else ""
     value = float(parsed) if "." in parsed else int(parsed)
-    return value, f" {unit}"
+    return value, unit
 
 
 def round_increment(value, increment):
@@ -42,5 +42,5 @@ def round_increment(value, increment):
 
 def vmo(quantity, increment):
     value, unit = parse_quantity(quantity)
-    unit = " mcg" if unit.strip() == "" else unit
+    unit = "mcg" if unit.strip() == "" else unit
     return f"{round_increment(value, increment)}{unit}"
