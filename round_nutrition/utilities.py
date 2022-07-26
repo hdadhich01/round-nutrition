@@ -28,19 +28,19 @@ def round_increment(value, increment):
 #   while round(x, candidate) < EPSILON:
 #       candidate += 1
 #       if candidate > MAX_DECIMAL:
-#           raise Exception('Number is too small: {}'.format(x))
+#           raise Exception(f"Number is too small: {s}")
 #   if int(x * 10 ** (candidate + 1)) == 5:
 #       candidate += 1
 #   return candidate
 
 
 # def round_increment(value, increment):
-#   correction = 1e-5 if x > 0 else -1e-5
+#   correction = 1e-5 if value > 0 else -1e-5
 #   result = round(value / increment + correction) * increment
 #   return round(result, find_first_meaningful_decimal(increment))
 
 
-def vmo(quantity, increment):
+def vmo(quantity, increment, default_unit):
     value, unit = parse_quantity(quantity)
-    unit = "mcg" if unit.strip() == "" else unit
+    unit = "mcg" if unit.strip() == "" else default_unit
     return f"{round_increment(value, increment)}{unit}"

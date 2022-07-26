@@ -1,17 +1,17 @@
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hdadhich01/round-nutrition/main.svg)](https://results.pre-commit.ci/latest/github/hdadhich01/round-nutrition/main)
 ![build](https://github.com/hdadhich01/round-nutrition/actions/workflows/build.yml/badge.svg)
 [![PyPI](https://img.shields.io/pypi/v/round-nutrition)](https://pypi.org/project/round-nutrition/)
+[![Downloads](https://pepy.tech/badge/round-nutrition)](https://pepy.tech/project/round-nutrition)
 
 # round-nutrition
 A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
 ## Example
-```py
+```pycon
 >>> a, b = Main(), Vitamin()
 >>> print([a.tot_carb('0.8g'), b.vitamin_k('125.5 mcg')])
-['less than 1 g', '126mcg']
+['less than 1g', '126mcg']
 >>> print(a.tot_carb('0.8 g', minimal=True))
-'<1g'
+<1g
 ```
 
 ## Setup
