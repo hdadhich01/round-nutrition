@@ -5,7 +5,7 @@
 
 # round-nutrition
 A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
-## Example
+
 ```pycon
 >>> a, b = Main(), Vitamin()
 >>> print([a.tot_carb('0.8g'), b.vitamin_k('125.5 mcg')])
@@ -14,18 +14,18 @@ A lightweight Python package to round nutritional values for federal compliance 
 <1g
 ```
 
-## Setup
-First, install the package with:
-```shell
-$ pip install round-nutrition
+## Installation
+Install the package:
+```bash
+pip install round-nutrition
 ```
-Then, import the module with the desired nutrient(s):
+Import the module with the class of desired nutrient(s):
 ```py
 from round_nutrition import Main # Vitamin, Mineral, Other
 ```
 
 ## Usage
-All subnutrient methods take in an `integer` or `string` argument of `quantity`.
+All subnutrient methods take in an `integer` or `string` argument of `quantity`
 ```js
           Main                    Vitamin                  Mineral                  Other
       added_sugars*           biotin                      calcium                  choline
@@ -47,7 +47,10 @@ All subnutrient methods take in an `integer` or `string` argument of `quantity`.
       tot_sugars*
       trans_fat
 ```
-*Some functions have an additional `boolean` argument of `minimal` that can be set to `True` for a cleaner user interface implementation. By default, this parameter is set to `False`.
+*Some functions have an additional `boolean` argument of `minimal` that can be set to `True` for a cleaner user interface implementation. By default, this parameter is set to `False`
+
+## Contributing
+Make a pull request for any idea/fix you have, or make an issue if you're lazy.
 
 ## License
 [MIT](https://github.com/hdadhich01/round-nutrition/blob/main/LICENSE)
