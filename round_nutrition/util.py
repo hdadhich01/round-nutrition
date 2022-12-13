@@ -6,8 +6,12 @@ def parse_quantity(quantity):
         return 0, ""
     elif type(quantity) in [int, float]:
         return quantity, ""
-    quantity = quantity.strip()
-    parsed = match(r"\d+(\.\d+)?", quantity).group()
+    quantity, found = quantity.strip(), match(r"\d+(\.\d+)?", quantity)
+    if not found:
+        raise ValueError(
+            "A quantity should contain both a number and the unit associated with it"
+        )
+    parsed = found.group()
     unit = quantity[len(parsed) :].strip() if not quantity.isdigit() else ""
     value = float(parsed) if "." in parsed else int(parsed)
     return value, unit
@@ -40,7 +44,37 @@ def round_increment(value, increment):
 #   return round(result, find_first_meaningful_decimal(increment))
 
 
-def vmo(quantity, increment, default_unit):
+def _fat(quantity):
+    value, unit = parse_quantity(quantity)
+    unit = "g" if unit.strip() == "" else unit
+    if value < 0.5:
+        return f"0{unit}"
+    elif value < 5:
+        return f"{round_increment(value, 0.5)}{unit}"
+    return f"{round_increment(value, 1)}{unit}"
+
+
+def _carb(quantity, minimal):
+    value, unit = parse_quantity(quantity)
+    unit = "g" if unit.strip() == "" else unit
+    if value < 0.5:
+        return f"0{unit}"
+    elif value < 1:
+        return f"<1{unit}" if minimal else f"less than 1{unit}"
+    return f"{round_increment(value, 1)}{unit}"
+
+
+def _sod_pot(quantity):
+    value, unit = parse_quantity(quantity)
+    unit = "mg" if unit.strip() == "" else unit
+    if value < 5:
+        return f"0{unit}"
+    elif value < 140:
+        return f"{round_increment(value, 5)}{unit}"
+    return f"{round_increment(value, 10)}{unit}"
+
+
+def _vmo(quantity, increment, default_unit):
     value, unit = parse_quantity(quantity)
     unit = "mcg" if unit.strip() == "" else default_unit
     return f"{round_increment(value, increment)}{unit}"

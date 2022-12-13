@@ -1,9 +1,13 @@
 [project]
 name = "round-nutrition"
-authors = [{ name = "Harsh Dadhich" }]
 version = "1.0.9"
-readme = "README.md"
 description = "Round nutritional values for federal compliance."
+authors = [
+    {name = "Harsh Dadhich"},
+]
+dependencies = []
+readme = "README.md"
+license = {text = "MIT"}
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
@@ -22,3 +26,10 @@ keywords = [
 
 [project.urls]
 Repository = "https://github.com/hdadhich01/round-nutrition"
+
+[tool]
+[tool.pdm]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"

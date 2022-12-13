@@ -1,6 +1,5 @@
-from .utilities import vmo
+from .util import _vmo
 
 
-class Other:
-    def choline(self, quantity: "int|str") -> str:
-        return vmo(quantity, 10, "mg")
+def choline(quantity: "int|str") -> str:
+    return _vmo(quantity, 10, "mg")

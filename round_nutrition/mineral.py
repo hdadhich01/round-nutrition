@@ -1,39 +1,49 @@
-from .utilities import vmo
+from .util import _vmo
 
 
-class Mineral:
-    def calcium(self, quantity: "int|str") -> str:
-        return vmo(quantity, 10, "mg")
+def calcium(quantity: "int|str") -> str:
+    return _vmo(quantity, 10, "mg")
 
-    def potassium(self, quantity: "int|str") -> str:
-        return vmo(quantity, 10, "mg")
 
-    def phosphorus(self, quantity: "int|str") -> str:
-        return vmo(quantity, 10, "mg")
+def potassium(quantity: "int|str") -> str:
+    return _vmo(quantity, 10, "mg")
 
-    def magnesium(self, quantity: "int|str") -> str:
-        return vmo(quantity, 5, "mg")
 
-    def iron(self, quantity: "int|str") -> str:
-        return vmo(quantity, 0.1, "mg")
+def phosphorus(quantity: "int|str") -> str:
+    return _vmo(quantity, 10, "mg")
 
-    def zinc(self, quantity: "int|str") -> str:
-        return vmo(quantity, 0.1, "mg")
 
-    def copper(self, quantity: "int|str") -> str:
-        return vmo(quantity, 0.1, "mg")
+def magnesium(quantity: "int|str") -> str:
+    return _vmo(quantity, 5, "mg")
 
-    def manganese(self, quantity: "int|str") -> str:
-        return vmo(quantity, 0.1, "mg")
 
-    def iodine(self, quantity: "int|str") -> str:
-        return vmo(quantity, 1, "mcg")
+def iron(quantity: "int|str") -> str:
+    return _vmo(quantity, 0.1, "mg")
 
-    def selenium(self, quantity: "int|str") -> str:
-        return vmo(quantity, 1, "mcg")
 
-    def chromium(self, quantity: "int|str") -> str:
-        return vmo(quantity, 1, "mcg")
+def zinc(quantity: "int|str") -> str:
+    return _vmo(quantity, 0.1, "mg")
 
-    def molybdenum(self, quantity: "int|str") -> str:
-        return vmo(quantity, 1, "mcg")
+
+def copper(quantity: "int|str") -> str:
+    return _vmo(quantity, 0.1, "mg")
+
+
+def manganese(quantity: "int|str") -> str:
+    return _vmo(quantity, 0.1, "mg")
+
+
+def iodine(quantity: "int|str") -> str:
+    return _vmo(quantity, 1, "mcg")
+
+
+def selenium(quantity: "int|str") -> str:
+    return _vmo(quantity, 1, "mcg")
+
+
+def chromium(quantity: "int|str") -> str:
+    return _vmo(quantity, 1, "mcg")
+
+
+def molybdenum(quantity: "int|str") -> str:
+    return _vmo(quantity, 1, "mcg")
