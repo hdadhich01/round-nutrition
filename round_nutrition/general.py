@@ -10,7 +10,6 @@ def calories(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded calories quantity.
@@ -23,12 +22,11 @@ def calories(quantity: "int|str") -> str:
     return f"{round_increment(value, 10)}{unit}"
 
 
-def tot_fat(quantity: "int|str") -> str:
+def total_fat(quantity: "int|str") -> str:
     """Round a total fat quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded total quantity.
@@ -36,12 +34,14 @@ def tot_fat(quantity: "int|str") -> str:
     return _fat(quantity)
 
 
+tot_fat = total_fat
+
+
 def sat_fat(quantity: "int|str") -> str:
     """Round a saturated fat quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded saturated quantity.
@@ -54,7 +54,6 @@ def trans_fat(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded trans-unsaturated quantity.
@@ -67,7 +66,6 @@ def poly_fat(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded monounsaturated quantity.
@@ -80,7 +78,6 @@ def mono_fat(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded monounsaturated quantity.
@@ -112,7 +109,6 @@ def sodium(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded sodium quantity.
@@ -125,7 +121,6 @@ def potassium(quantity: "int|str") -> str:
 
     Args:
         quantity (int|str): The quantity to be rounded.
-        minimal (bool, optional): Indicate whether to return in minimal format. Defaults to False.
 
     Returns:
         str: The rounded potassium quantity.
@@ -133,7 +128,7 @@ def potassium(quantity: "int|str") -> str:
     return _sod_pot(quantity)
 
 
-def tot_carb(quantity: "int|str", minimal: bool = False) -> str:
+def total_carb(quantity: "int|str", minimal: bool = False) -> str:
     """Round a total carbohydrate quantity.
 
     Args:
@@ -144,6 +139,9 @@ def tot_carb(quantity: "int|str", minimal: bool = False) -> str:
         str: The rounded total carbohydrate quantity.
     """
     return _carb(quantity, minimal)
+
+
+tot_carb = total_carb
 
 
 def dietary_fiber(quantity: "int|str", minimal: bool = False) -> str:
@@ -159,6 +157,9 @@ def dietary_fiber(quantity: "int|str", minimal: bool = False) -> str:
     return _carb(quantity, minimal)
 
 
+diet_fiber = dietary_fiber
+
+
 def soluble_fiber(quantity: "int|str", minimal: bool = False) -> str:
     """Round a soluble fiber quantity.
 
@@ -170,6 +171,9 @@ def soluble_fiber(quantity: "int|str", minimal: bool = False) -> str:
         str: The rounded soluble fiber quantity.
     """
     return _carb(quantity, minimal)
+
+
+sol_fiber = soluble_fiber
 
 
 def insoluble_fiber(quantity: "int|str", minimal: bool = False) -> str:
@@ -185,7 +189,10 @@ def insoluble_fiber(quantity: "int|str", minimal: bool = False) -> str:
     return _carb(quantity, minimal)
 
 
-def tot_sugars(quantity: "int|str", minimal: bool = False) -> str:
+insol_fiber = insoluble_fiber
+
+
+def total_sugars(quantity: "int|str", minimal: bool = False) -> str:
     """Round a total sugars quantity.
 
     Args:
@@ -196,6 +203,9 @@ def tot_sugars(quantity: "int|str", minimal: bool = False) -> str:
         str: The rounded total sugars quantity.
     """
     return _carb(quantity, minimal)
+
+
+tot_sugars = total_sugars
 
 
 def added_sugars(quantity: "int|str", minimal: bool = False) -> str:
@@ -211,6 +221,9 @@ def added_sugars(quantity: "int|str", minimal: bool = False) -> str:
     return _carb(quantity, minimal)
 
 
+add_sugars = added_sugars
+
+
 def sugar_alcohol(quantity: "int|str", minimal: bool = False) -> str:
     """Round a sugar alcohol quantity.
 
@@ -222,6 +235,9 @@ def sugar_alcohol(quantity: "int|str", minimal: bool = False) -> str:
         str: The rounded sugar alcohol quantity.
     """
     return _carb(quantity, minimal)
+
+
+sugar_alc = sugar_alcohol
 
 
 def other_carb(quantity: "int|str", minimal: bool = False) -> str:

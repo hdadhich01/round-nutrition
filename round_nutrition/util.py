@@ -9,7 +9,7 @@ def parse_quantity(quantity):
     quantity, found = quantity.strip(), match(r"\d+(\.\d+)?", quantity)
     if not found:
         raise ValueError(
-            "A quantity should contain both a number and the unit associated with it"
+            "A quantity can contain only the value, or both the value and unit"
         )
     parsed = found.group()
     unit = quantity[len(parsed) :].strip() if not quantity.isdigit() else ""
@@ -18,9 +18,9 @@ def parse_quantity(quantity):
 
 
 def round_increment(value, increment):
-    minimum = value // increment * increment
-    maximum = minimum + increment
-    res = maximum if (maximum - value) <= (value - minimum) else minimum
+    min_ = value // increment * increment
+    max_ = min_ + increment
+    res = max_ if (max_ - value) <= (value - min_) else min_
     return res if res % 1.0 else int(res)
 
 

@@ -1,11 +1,10 @@
 [project]
 name = "round-nutrition"
-version = "1.0.9"
+version = "1.1.0"
 description = "Round nutritional values for federal compliance."
 authors = [
     {name = "Harsh Dadhich"},
 ]
-dependencies = []
 readme = "README.md"
 license = {text = "MIT"}
 classifiers = [
@@ -25,9 +24,8 @@ keywords = [
 ]
 
 [project.urls]
-Repository = "https://github.com/hdadhich01/round-nutrition"
+Homepage = "https://github.com/hdadhich01/round-nutrition"
 
-[tool]
 [tool.pdm]
 
 [build-system]

@@ -8,9 +8,9 @@
 A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fdgov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
 
 ```pycon
->>> print([tot_carb('0.8g'), vitamin_k('125.5 mcg')])
+>>> print([total_carb('0.8g'), vitamin_k('125.5 mcg')])
 ['less than 1g', '126mcg']
->>> print(tot_carb('0.8 g', minimal=True))
+>>> print(total_carb('0.8 g', minimal=True))
 <1g
 ```
 
@@ -25,16 +25,16 @@ pip install round-nutrition
 Import the module:
 
 ```py
-from round_nutrition import *
+from round_nutrition import * # or specific functions
 ```
 
 ## Usage
 
-All subnutrient methods take in an `integer` or `string` argument of `quantity`
+All subnutrient functions take in an `int` or `str` argument for `quantity`.
 
 ```js
          General                   Vitamin                  Mineral                  Other
-      added_sugars*           biotin                      calcium                  choline
+      added_sugars*           biotin                      calcium                   choline
       calories                folate                      chromium
       cholesterol*            niacin                      copper
       dietary_fiber*          pantothenic_acid            iodine
@@ -48,13 +48,15 @@ All subnutrient methods take in an `integer` or `string` argument of `quantity`
       sodium                  vitamin_e                   zinc
       soluble_fiber*          vitamin_k
       sugar_alcohol*
-      tot_carb*
-      tot_fat
-      tot_sugars*
+      total_carb*
+      total_fat
+      total_sugars*
       trans_fat
 ```
 
-\*Some functions have an additional `boolean` argument of `minimal` that can be set to `True` for a cleaner user interface implementation. By default, this parameter is set to `False`
+⚠️ As of `1.1.x` all functions have been made external with no need for object instantiation.
+
+\*Some functions have an additional `boolean` parameter of `minimal` to opt for a cleaner UI implementation. By default, the argument is set to `False`.
 
 ## Contributing
 
