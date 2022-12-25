@@ -1,8 +1,4 @@
-from .util import _carb
-from .util import _fat
-from .util import _sod_pot
-from .util import parse_quantity
-from .util import round_increment
+from .util import _carb, _fat, _sod_pot, parse_quantity, round_increment
 
 
 def calories(quantity: "int|str") -> str:
