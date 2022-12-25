@@ -31,3 +31,7 @@ Homepage = "https://github.com/hdadhich01/round-nutrition"
 [build-system]
 requires = ["pdm-pep517>=1.0.0"]
 build-backend = "pdm.pep517.api"
+
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+[tool.isort]
+profile = "black"
