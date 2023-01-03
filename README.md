@@ -8,9 +8,9 @@
 A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fdgov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
 
 ```pycon
->>> print([total_carb('0.8g'), vitamin_k('125.5 mcg')])
+>>> print([total_carb("0.8g"), vitamin_k("125.5 mcg")])
 ['less than 1g', '126mcg']
->>> print(total_carb('0.8 g', minimal=True))
+>>> print(total_carb("0.8 g", minimal=True))
 <1g
 ```
 
@@ -25,7 +25,7 @@ pip install round-nutrition
 Import the module:
 
 ```py
-from round_nutrition import * # or specific functions
+from round_nutrition import *  # or specific functions
 ```
 
 ## Usage
