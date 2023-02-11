@@ -5,7 +5,7 @@
 
 # round-nutrition
 
-A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fdgov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
+A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
 
 ```pycon
 >>> print([total_carb('0.8g'), vitamin_k('125.5 mcg')])
