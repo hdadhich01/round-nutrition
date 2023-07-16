@@ -2,6 +2,7 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
+      - id: check-ast
       - id: check-added-large-files
       - id: check-docstring-first
       - id: check-toml
@@ -14,7 +15,7 @@ repos:
     hooks:
       - id: pyupgrade
 
-  # https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+    # https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
   - repo: https://github.com/pycqa/isort
     rev: 5.12.0
     hooks:
@@ -36,18 +37,19 @@ repos:
     hooks:
       - id: mypy
 
-  # FIXME: configure with https://pypi.org/project/setup-py-upgrade/
-  # - repo: https://github.com/asottile/setup-cfg-fmt
-  #   rev: v2.2.0
-  #   hooks:
-  #   - id: setup-cfg-fmt
+    # FIXME: configure with https://pypi.org/project/setup-py-upgrade/
+    # - repo: https://github.com/asottile/setup-cfg-fmt
+    #   rev: v2.2.0
+    #   hooks:
+    #   - id: setup-cfg-fmt
 
   # - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
   #   rev: v2.5.0
   #   hooks:
   #     - id: pretty-format-toml
-  #       args: [--autofix]
-  #     # https://github.com/macisamuele/language-formatters-pre-commit-hooks/issues/132
+  #       args:
+  #         [--autofix]
+  #         # https://github.com/macisamuele/language-formatters-pre-commit-hooks/issues/132
   #     - id: pretty-format-yaml
   #       args: [--autofix]
 
