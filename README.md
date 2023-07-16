@@ -1,5 +1,4 @@
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hdadhich01/round-nutrition/main.svg)](https://results.pre-commit.ci/latest/github/hdadhich01/round-nutrition/main)
-[![build](https://github.com/hdadhich01/round-nutrition/actions/workflows/build.yml/badge.svg)](https://github.com/hdadhich01/round-nutrition/actions/workflows/build.yml)
 [![PyPI](https://img.shields.io/pypi/v/round-nutrition)](https://pypi.org/project/round-nutrition/)
 [![Downloads](https://pepy.tech/badge/round-nutrition)](https://pepy.tech/project/round-nutrition)
 
