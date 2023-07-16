@@ -1,6 +1,6 @@
 [project]
 name = "round-nutrition"
-version = "1.1.1a1"
+version = "1.1.1a2"
 description = "Round nutritional values for federal compliance"
 authors = [{name = "Harsh Dadhich", email = "me@harshdadhich.com"}]
 readme = "README.md"
