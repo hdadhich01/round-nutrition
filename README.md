@@ -4,7 +4,7 @@
 
 # round-nutrition
 
-A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines.
+A lightweight Python package to round nutritional values for federal compliance with [FDA](https://www.fda.gov/) and [NDC](https://www.usdairy.com/about-us/national-dairy-council) guidelines
 
 ```pycon
 >>> print([total_carb('0.8g'), vitamin_k('125.5 mcg')])
@@ -53,13 +53,13 @@ All subnutrient functions take in an `int` or `str` argument for `quantity`.
       trans_fat
 ```
 
-⚠️ As of `1.1.x` all functions have been made external with no need for object instantiation.
+⚠️ As of `1.1.x` all functions have been made external with no need for object instantiation
 
-\*Some functions have a `boolean` parameter of `minimal` to opt for a cleaner user interface implementation. By default, its argument is set to `False`.
+\*Some functions have a `boolean` parameter of `minimal` to opt for a cleaner user interface implementation. By default, its argument is set to `False`
 
 ## Contributing
 
-Make a pull request for any idea/fix you have, or make an issue if you're lazy.
+Make a pull request for any idea/fix you have, or make an issue if you're lazy
 
 ## License
 
