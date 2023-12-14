@@ -1,10 +1,12 @@
 [project]
 name = "round-nutrition"
-version = "1.1.1a2"
+version = "0.1.1a3"
 description = "Round nutritional values for federal compliance"
-authors = [{name = "Harsh Dadhich", email = "me@harshdadhich.com"}]
+authors = [
+    {name = "Harsh Dadhich", email = "me@harshdadhich.com"},
+]
 readme = "README.md"
-license = {file = "LICENSE"}
+license = {text = "MIT"}
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
@@ -16,9 +18,9 @@ classifiers = [
     "Topic :: Utilities"
 ]
 keywords = [
-    "fda",
+    "round",
     "nutrition",
-    "round"
+    "fda"
 ]
 
 [project.urls]

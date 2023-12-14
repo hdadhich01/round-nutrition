@@ -29,10 +29,10 @@ from round_nutrition import * # or specific functions
 
 ## Usage
 
-All subnutrient functions take in an `int` or `str` argument for `quantity`.
+All subnutrient functions take in an `int` or `str` argument for `quantity`
 
 ```js
-         General                   Vitamin                  Mineral                  Other
+         General ‎                   Vitamin ‎                  Mineral ‎                  Other ‎
       added_sugars*           biotin                      calcium                   choline
       calories                folate                      chromium
       cholesterol*            niacin                      copper
@@ -53,9 +53,14 @@ All subnutrient functions take in an `int` or `str` argument for `quantity`.
       trans_fat
 ```
 
-⚠️ As of `1.1.x` all functions have been made external with no need for object instantiation
+⚠️ As of `1.1.x` all functions are global with no need for special imports
 
-\*Some functions have a `boolean` parameter of `minimal` to opt for a cleaner user interface implementation. By default, its argument is set to `False`
+\*Has a `boolean` parameter of `minimal` to opt for a cleaner UI
+
+## Sources
+
+- [Food and Drug Administration](https://www.fda.gov/files/food/published/Food-Labeling-Guide-%28PDF%29.pdf#page=129)
+- [National Dairy Council](https://www.usdairy.com/getmedia/7f24626b-c08b-459a-b964-7a8478c88cd0/dmi%20quick%20reference%20guide_nutrition%20claims%20for%20dairy%20products_2018.pdf.pdf.aspx#page=10)
 
 ## Contributing
 
