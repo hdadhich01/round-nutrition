@@ -32,7 +32,7 @@ from round_nutrition import * # or specific functions
 All subnutrient functions take in an `int` or `str` argument for `quantity`
 
 ```js
-         General ‎                   Vitamin ‎                  Mineral ‎                  Other ‎
+         General                   Vitamin                  Mineral                  Other
       added_sugars*           biotin                      calcium                   choline
       calories                folate                      chromium
       cholesterol*            niacin                      copper

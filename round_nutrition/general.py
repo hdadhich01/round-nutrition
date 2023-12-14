@@ -173,7 +173,7 @@ sol_fiber = soluble_fiber
 
 
 def insoluble_fiber(quantity: "int|str", minimal: bool = False) -> str:
-    """Round a insoluble fiber quantity.
+    """Round an insoluble fiber quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.
@@ -205,7 +205,7 @@ tot_sugars = total_sugars
 
 
 def added_sugars(quantity: "int|str", minimal: bool = False) -> str:
-    """Round a added sugars quantity.
+    """Round an added sugars quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.
@@ -237,7 +237,7 @@ sugar_alc = sugar_alcohol
 
 
 def other_carb(quantity: "int|str", minimal: bool = False) -> str:
-    """Round a other carbohydrate quantity.
+    """Round an other carbohydrate quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.

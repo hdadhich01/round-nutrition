@@ -50,7 +50,7 @@ def magnesium(quantity: "int|str") -> str:
 
 
 def iron(quantity: "int|str") -> str:
-    """Round a iron quantity.
+    """Round an iron quantity.
 
     Args:
         quantity (int|str): The quantity to be rounded.
